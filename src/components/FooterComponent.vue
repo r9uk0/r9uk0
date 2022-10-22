@@ -29,7 +29,7 @@ export default Vue.extend({
 </script>
 
 <style scoped>
-.contact.footerArea {
+.footerArea .contact {
   color: #1d9bf0;
 }
 .footerArea {
