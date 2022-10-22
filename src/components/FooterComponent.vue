@@ -6,7 +6,8 @@
         フロントエンドエンジニア r9uk0<br />
         Vue.jsが得意です。バックエンドはNode.jsとpythonが好きです。<br />
         真摯にお客様と向き合い、課題解決や顧客体験への寄与を大切にしております。<br />
-        CONTACT：<a>Twitter</a><br />© r9uk0 All rights reserved.
+        CONTACT：<a class="contact" href="https://twitter.com/r9uk0">Twitter</a
+        ><br />© r9uk0 All rights reserved.
       </p>
     </div>
   </div>
@@ -28,6 +29,9 @@ export default Vue.extend({
 </script>
 
 <style scoped>
+.contact.footerArea {
+  color: #1d9bf0;
+}
 .footerArea {
   display: flex;
   justify-content: center;
