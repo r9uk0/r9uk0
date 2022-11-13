@@ -9,6 +9,8 @@
 </template>
 <script lang="ts">
 import Vue from "vue";
+import { mapState, mapActions } from "vuex";
+import { LOADING_START, LOADING_STOP } from "@/store/action-types";
 export default Vue.extend({
   mounted() {
     let fadeInTarget = document.querySelectorAll(".fadeIn");
@@ -23,6 +25,25 @@ export default Vue.extend({
         }
       }
     });
+  },
+  computed: {
+    ...mapState({
+      isLoading: (state) => (state as any).isLoading,
+    }),
+  },
+  methods: {
+    ...mapActions({
+      loadingStart: LOADING_START,
+      loadingStop: LOADING_STOP,
+    }),
+  },
+  async created() {
+    const sleep = (ms: any) => new Promise((res) => setTimeout(res, ms));
+    await Promise.all([
+      await this.loadingStart(),
+      await await sleep(2000),
+      await this.loadingStop(),
+    ]);
   },
 });
 </script>

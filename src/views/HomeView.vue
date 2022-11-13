@@ -8,7 +8,7 @@
     <!-- ContactComponent -->
     <IntroComponent />
     <FooterComponent />
-    <LoadingComponent :isLoading="false" />
+    <LoadingComponent />
   </div>
 </template>
 
@@ -20,7 +20,6 @@ import IntroComponent from "@/components/IntroComponent.vue";
 import FooterComponent from "@/components/FooterComponent.vue";
 import HeaderComponent from "@/components/HeaderComponent.vue";
 import LoadingComponent from "@/components/LoadingComponent.vue";
-
 export default Vue.extend({
   name: "HomeView",
   components: {
@@ -35,7 +34,6 @@ export default Vue.extend({
     return {};
   },
   methods: {},
-  computed: {},
   watch: {},
 });
 </script>

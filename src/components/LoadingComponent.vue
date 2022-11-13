@@ -13,16 +13,21 @@
 
 <script lang="ts">
 import Vue from "vue";
+import { mapState } from "vuex";
 
 export default Vue.extend({
   name: "LoadingComponent",
   components: {},
-  props: { isLoading: Boolean },
+  props: {},
   data() {
     return {};
   },
   methods: {},
-  computed: {},
+  computed: {
+    ...mapState({
+      isLoading: (state) => (state as any).isLoading,
+    }),
+  },
   watch: {},
 });
 </script>
@@ -38,6 +43,7 @@ export default Vue.extend({
   display: flex;
   justify-content: center;
   align-items: center;
+  opacity: 0.9;
 }
 .loadingArea.none {
   display: none;
@@ -50,7 +56,7 @@ export default Vue.extend({
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #fb5b53;
+  background: #dfd3c3;
   animation: configure-clockwise 3s ease-in-out 0s infinite alternate;
 }
 
