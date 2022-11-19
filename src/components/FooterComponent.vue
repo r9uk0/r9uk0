@@ -1,7 +1,7 @@
 <template>
   <div class="footerArea" id="PROFILE">
     <div class="footerContainer">
-      <img src="@/assets/profile.jpg" alt="" />
+      <img src="@/assets/profile.jpeg" alt="" />
       <p>
         フロントエンドエンジニア r9uk0<br />
         Vue.jsが得意です。バックエンドはNode.jsとpythonが好きです。<br />
@@ -52,10 +52,9 @@ export default Vue.extend({
   letter-spacing: 0.075em;
 }
 .footerContainer img {
-  width: 8vw;
+  width: auto;
   height: 8vw;
   margin-right: 2vw;
-  border-radius: 50%;
 }
 @media screen and (max-width: 768px) {
   .footerArea {
@@ -65,7 +64,6 @@ export default Vue.extend({
     font-size: 2.5vw;
   }
   .footerContainer img {
-    width: 12vw;
     height: 12vw;
   }
 }
