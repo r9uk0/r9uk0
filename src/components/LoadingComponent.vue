@@ -37,7 +37,7 @@ export default Vue.extend({
   position: fixed;
   top: 0;
   height: 100vh;
-  width: 100vw;
+  width: 100%;
   background: #1d2630;
   z-index: 999;
   display: flex;

@@ -50,7 +50,7 @@ export default Vue.extend({
   justify-content: space-between;
   align-items: stretch;
   background: transparent;
-  width: 100vw;
+  width: 100%;
   height: auto;
   padding: 2vw 3vw;
   position: fixed;

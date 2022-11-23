@@ -37,7 +37,7 @@ export default Vue.extend({
   justify-content: center;
   align-items: center;
   background: #24292f;
-  width: 100vw;
+  width: 100%;
   height: 20vw;
   color: #fff;
 }

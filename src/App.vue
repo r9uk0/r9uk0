@@ -247,7 +247,7 @@ html {
   font-family: "Yu Gothic", YuGothic, "Hiragino Kaku Gothic Pro", Meiryo, Osaka,
     "MS PGothic", sans-serif;
   font-size: 12px;
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   margin: 0;
   padding: 0;
@@ -301,7 +301,7 @@ a:hover {
 .creationArea,
 .introArea {
   min-height: 100vh;
-  width: 100vw;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
